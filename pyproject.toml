@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "alphanum"
-version = "0.2.0.dev2"
+version = "0.2.0"
 description = "Generates random alphanumeric strings."
 authors = ["Cody Logan <clpo13@gmail.com>"]
 license = "MIT"

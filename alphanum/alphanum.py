@@ -8,12 +8,12 @@ POP = string.ascii_letters + string.digits
 
 
 def generate(length: int = 1) -> str:
-    """Generates a random string of alphanumeric characters of the given length
+    """Generates a random string of alphanumeric characters of the given length.
     If no length is specified, a single character is returned.
 
-    On Python 3.5, this string is pseudo-randomly generated using the random
-    module. With 3.6 and later, the randomness is generated with the secrets
-    module, making the randomization cryptographically strong.
+    On Python 3.5, this string is pseudo-randomly generated using
+    :py:mod:`random`. With 3.6 and later, the randomness is generated with
+    :py:mod:`secrets`, making the randomization cryptographically strong.
 
     Args:
         length (:obj:`int`, optional): Desired string length. Defaults to 1.

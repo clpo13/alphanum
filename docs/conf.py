@@ -22,7 +22,7 @@ copyright = '2020, Cody Logan'
 author = 'Cody Logan'
 
 # The full version, including alpha/beta/rc tags
-release = '0.2.0.dev1'
+release = '0.2.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,7 +31,8 @@ release = '0.2.0.dev1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinxcontrib.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx.ext.intersphinx',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -41,6 +42,10 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+}
 
 
 # -- Options for HTML output -------------------------------------------------
