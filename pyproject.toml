@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "alphanum"
-version = "0.2.0dev1"
+version = "0.2.0.dev2"
 description = "Generates random alphanumeric strings."
 authors = ["Cody Logan <clpo13@gmail.com>"]
 license = "MIT"
@@ -10,7 +10,7 @@ repository = "https://github.com/clpo13/alphanum"
 keywords = ['string', 'random', 'pseudo-random', 'generator']
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
