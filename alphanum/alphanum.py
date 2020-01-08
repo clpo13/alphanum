@@ -16,9 +16,9 @@ def generate(length: int = 1) -> str:
         str: A pseudo-random alphanumeric string.
 
     Examples:
-        >>> print(generate())
+        >>> print(alphanum.generate())
         'G'
-        >>> print(generate(10))
+        >>> print(alphanum.generate(10))
         'a93jfDjdA0'
 
     """
@@ -37,9 +37,9 @@ def generate_s(length: int = 1) -> str:
         str: A random alphanumeric string.
 
     Examples:
-        >>> print(generate_s())
+        >>> print(alphanum.generate_s())
         '5'
-        >>> print(generate_s(10))
+        >>> print(alphanum.generate_s(10))
         't3g0Gh9Naj'
 
     """
