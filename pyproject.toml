@@ -6,7 +6,7 @@ authors = ["Cody Logan <clpo13@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/clpo13/alphanum"
-repository = "https://github.com/clpo13/repository"
+repository = "https://github.com/clpo13/alphanum"
 keywords = ['string', 'random', 'pseudo-random', 'generator']
 
 [tool.poetry.dependencies]
