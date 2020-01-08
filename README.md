@@ -1,7 +1,7 @@
 # alphanum
 
 Simple Python library to generate pseudo-random alphanumeric strings of
-arbitrary length. Requires Python 3.6+.
+arbitrary length. Requires Python 3.5+.
 
 ## Installation
 

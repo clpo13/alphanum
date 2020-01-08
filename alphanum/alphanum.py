@@ -1,13 +1,19 @@
-import random
-import secrets
+try:
+    import secrets as random
+except ImportError:
+    import random
 import string
 
 POP = string.ascii_letters + string.digits
 
 
 def generate(length: int = 1) -> str:
-    """Generates a pseudo-random string of alphanumeric characters of the given
-    length. If no length is specified, a single character is returned.
+    """Generates a random string of alphanumeric characters of the given length
+    If no length is specified, a single character is returned.
+
+    On Python 3.5, this string is pseudo-randomly generated using the random
+    module. With 3.6 and later, the randomness is generated with the secrets
+    module, making the randomization cryptographically strong.
 
     Args:
         length (:obj:`int`, optional): Desired string length. Defaults to 1.
@@ -22,25 +28,4 @@ def generate(length: int = 1) -> str:
         'a93jfDjdA0'
 
     """
-    return ''.join(random.SystemRandom().choices(POP, k=length))
-
-
-def generate_s(length: int = 1) -> str:
-    """Generates a cryptographically strong random string of alphanumeric
-    characters of the given length. If no length is specified, a single
-    character is returned.
-
-    Args:
-        length (:obj:`int`, optional): Desired string length. Defaults to 1.
-
-    Returns:
-        str: A random alphanumeric string.
-
-    Examples:
-        >>> print(alphanum.generate_s())
-        '5'
-        >>> print(alphanum.generate_s(10))
-        't3g0Gh9Naj'
-
-    """
-    return ''.join(secrets.SystemRandom().choice(POP) for i in range(length))
+    return ''.join(random.SystemRandom().choice(POP) for i in range(length))
