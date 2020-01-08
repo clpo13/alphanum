@@ -1,5 +1,7 @@
-from random import choices
+import random
+
+POP = 'abcdefghijklmnopqrstuvwxyz0123456789'
 
 
 def generate(length=1) -> str:
-    return ''.join(choices('abcdefghijklmnopqrstuvwxyz0123456789', k=length))
+    return ''.join(random.SystemRandom().choices(POP, k=length))
